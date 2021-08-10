@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Crear Persona</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Crear Persona</h1>
+
+		<form th:action="@{/personas/guardar}" method="post">
+		
+			<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">Nombre
+				</label> <input type="text" class="form-control" id="formGroupExampleInput"
+				name="nombre"	placeholder="Ingrese el nombre">
+			</div>
+			<div class="mb-3">
+				<label for="formGroupExampleInput2" class="form-label">Apellido
+				</label> <input type="text" class="form-control" id="formGroupExampleInput2"
+				name="apellido"	placeholder="Ingrese el apellido">
+			</div>
+			<div class="mb-3">
+				<label for="formGroupExampleInput3" class="form-label">Telefono
+				</label> <input type="text" class="form-control" id="formGroupExampleInput2"
+				name="telefono"	placeholder="Ingrese un telefono">
+			</div>
+
+			<button type="submit" class="btn btn-success">Guardar</button>
+		</form>
+	</div>
+</body>
+</html>
